@@ -13,6 +13,24 @@
     color: var(--main-color);
 }
 
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.nav {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+}
+  
+.nav:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    padding-top: 10px;
+}
+
 body {
     display: flex;
     justify-content: center;
