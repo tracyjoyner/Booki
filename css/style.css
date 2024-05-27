@@ -37,6 +37,12 @@ nav {
     padding-top: 10px;
 }
 
+.nav:active {
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+    padding-top: 10px;
+}
+
 body {
     display: flex;
     justify-content: center;
