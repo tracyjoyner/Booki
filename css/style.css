@@ -7,6 +7,7 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --footer-bg-color: #F2F2F2;
 }
 
 .fa-solid, .fa-regular {
@@ -18,7 +19,6 @@
 }
 
 nav {
-    font-family: raleway, sans-serif;
     display: flex;
     justify-content: flex-end;
     gap: 40px;
@@ -32,8 +32,8 @@ nav {
 }
   
 .nav:hover {
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
     padding-top: 10px;
 }
 
