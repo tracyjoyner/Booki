@@ -7,7 +7,6 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
-    --footer-bg-color: #F2F2F2;
 }
 
 .fa-solid, .fa-regular {
@@ -16,6 +15,8 @@
 
 .logo {
     float: inline-start;
+    width: 5%;
+    padding-top: 12px;
 }
 
 nav {
@@ -46,6 +47,112 @@ nav {
 body {
     display: flex;
     justify-content: center;
+}
+
+.srch-txt {
+    margin-top: -15px;
+}
+
+.srch-bar {
+    display: flex;
+    height: 45px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.location {
+    align-items: center;
+    width: 20%;
+    background-color: var(--main-bg-color);
+    border-radius: 10px 0 0 10px;
+}
+
+.fa-location-dot {
+    align-items: center;
+    color: black;
+    margin-left: -12px;
+}
+  
+.srch-input {
+    width: 55%;
+    border-top: 1px solid var(--main-bg-color);
+    border-bottom: 1px solid var(--main-bg-color);
+}
+  
+.srch-input>input, .srch-input>input::placeholder {
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+}
+  
+.srch-btn-container {
+    width: 25%;
+    background-color: var(--main-color);
+    border-radius: 0 10px 10px 0;
+}
+  
+.srch-btn {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+}
+  
+.location, .srch-input, .srch-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.filters-txt, .buget-btn, .fam-btn, .rom-btn, .tp-btn {
+    height: 45px;
+    width: fit-content;
+    border-radius: 25px;
+    border: 2px solid var(--main-bg-color);
+    margin-right: 20px;
+    padding: 0px 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.filters-txt {
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.filters-txt, .buget-btn, .fam-btn, .rom-btn {
+    background-color: white;
+}
+
+.tp-btn {
+    background-color: var(--filter-bg-color);
+}
+
+.fa-money-bill-wave, .fa-person, .fa-heart, .fa-fire {
+    margin-right: 10px;
+}
+  
+.filter-info {
+    display: flex;
+    align-items: center;
+    height: 45px;
+}
+
+.info-icon {
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    border: 1px solid var(--main-bg-color);
+    margin-right: 20px;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
 }
 
 .main-container {
