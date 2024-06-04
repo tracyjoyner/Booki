@@ -13,9 +13,10 @@
     color: var(--main-color);
 }
 
+/****** logo and nav ***********/
 .logo {
     float: inline-start;
-    width: 5%;
+    width: 100px;
     padding-top: 12px;
 }
 
@@ -49,6 +50,7 @@ body {
     justify-content: center;
 }
 
+/****** search ***********/
 .srch-txt {
     margin-top: -15px;
 }
@@ -93,18 +95,27 @@ body {
     border-radius: 0 10px 10px 0;
 }
   
-.srch-btn {
+.srch-btn, .srch-btn-icon {
     border: none;
     background-color: transparent;
     color: white;
     font-size: 16px;
 }
-  
+
+@media (min-width: 641px) {
+    .srch-btn-icon {display:none}
+}
+
+@media (max-width: 640px) {
+    .srch-btn {display:none}
+}
+
 .location, .srch-input, .srch-btn-container {
     display: flex;
     justify-content: center;
 }
 
+/****** filters ***********/
 .filters-txt, .buget-btn, .fam-btn, .rom-btn, .tp-btn {
     height: 45px;
     width: fit-content;
@@ -122,11 +133,15 @@ body {
     align-items: center;
 }
 
-.filters-txt, .buget-btn, .fam-btn, .rom-btn {
+.filters-txt, .buget-btn, .fam-btn, .rom-btn, .tp-btn {
     background-color: white;
 }
 
-.tp-btn {
+.buget-btn:hover, .fam-btn:hover, .rom-btn:hover, .tp-btn:hover {
+    background-color: var(--filter-bg-color);
+}
+
+.buget-btn:active, .fam-btn:active, .rom-btn:active, .tp-btn:active {
     background-color: var(--filter-bg-color);
 }
 
@@ -166,6 +181,7 @@ body {
     font-size: 22px;
 }
 
+/****** cards ***********/
 .card {
     background-color: white;
     border-radius: 20px;
