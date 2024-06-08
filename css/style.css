@@ -349,8 +349,8 @@ body {
     margin-top: 33px;
 }
 
-.activities-cards .activities-card {
-    flex: 0 1 24%;
+.activities-cards .card {
+    flex: 0 1 23%;
 }
 
 .activities-cards img {
@@ -368,3 +368,32 @@ body {
     margin-top: 10px;
     margin-bottom: 4px;
 }
+
+/****footer****/
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--main-bg-color);
+    padding: 0 30px;
+}
+
+.footer-group {
+    width: 33%;
+}
+
+.footer-title {
+    padding-left: 8px;
+}
+
+.footer-text {
+    list-style-type: none;
+    padding: 0;
+}
+
+li a {
+    display: block;
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+  }
