@@ -204,7 +204,6 @@ body {
 /****** Accommodation And Popular ***********/
 .accommodation-and-popular {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -234,9 +233,9 @@ body {
 }
 
 .accomm-cards .card {
+    flex-direction: row;
     height: 200px;
-    min-width: 220px;
-    max-width: 100%;
+    width: 225px;
     margin-top: 33px;
 }
 
@@ -410,13 +409,12 @@ li a {
 
     .accommodation {
         display: flex;
-        flex: 0 1 100%;
         flex-direction: column;
     }
 
-    .accomm-cards .card {
-        max-width: 100%;
-    }
+    /**.accomm-cards .card {
+        flex: 0 1 100%;
+    }**/
 
     .popular {
         width: 100%;
@@ -433,14 +431,13 @@ li a {
     }
 
     .accommodation {
-        display: flex;
-        flex: 0 1 100%;
-        flex-direction: column;
         background-color: white;
     }
 
     .accomm-cards .card {
-        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 100%;
     }
 
     .popular {
