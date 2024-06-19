@@ -172,6 +172,11 @@ body {
     box-sizing: border-box;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -217,6 +222,7 @@ body {
 .accommodation {
     background-color: var(--main-bg-color);
     width: 65%;
+    flex-direction: row;
     grid-area: a;
 }
 
@@ -233,9 +239,8 @@ body {
 }
 
 .accomm-cards .card {
-    flex-direction: row;
     height: 200px;
-    width: 225px;
+    flex: 0 1 30%;
     margin-top: 33px;
 }
 
@@ -326,30 +331,20 @@ body {
 
 /****** Activities ***********/
 .activities {
+    width: 100%;
     background-color: white;
     padding: 30px;
     box-sizing: border-box;
 }
 
-.activities {
-    width: 100%;
-}
-
-.activities-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .activities-cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin-top: 33px;
 }
 
-.activities-cards .card {
+.activities-cards article {
     flex: 0 1 23%;
+    margin: 0 7px;
 }
 
 .activities-cards img {
@@ -403,25 +398,45 @@ li a {
 
 /***responsive***/
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .accommodation-and-popular{
+        display: grid;
+        width: 100%;
+        grid-template: 
+        "a"
+        "b";
+    }
+
     .filters {
         padding: 20px 0;
     }
 
     .accommodation {
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    /**.accomm-cards .card {
-        flex: 0 1 100%;
-    }**/
+    .accomm-cards .card {
+        flex: 0 1 30%;
+    }
 
     .popular {
         width: 100%;
+        margin-top: 50px;
+    }
+
+    .popular .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .popular-cards a {
+        width: 30%;
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .accommodation-and-popular{
         display: grid;
         width: 100%;
@@ -447,5 +462,9 @@ li a {
 
     .activities-cards .card {
         flex: 0 1 100%;
+    }
+
+    .footer-group {
+        width: 100%;
     }
 }
