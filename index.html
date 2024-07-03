@@ -24,7 +24,9 @@
     <div class="main-container">
       <header>
         <!--logo and nav-->
-        <img class="logo" src="images/logo/Booki.png" alt="booki-logo" />
+        <div class="logo-holder">
+          <img class="logo" src="images/logo/Booki.png" alt="booki-logo" />
+        </div>
         <nav>
           <a href="#accomm-title" class="nav">Accommodation</a>
           <a href="#activities-title" class="nav">Things to Do</a>
@@ -38,25 +40,25 @@
           <div class="location">
             <i class="fa-solid fa-location-dot" id="loc"></i>
           </div>
-          <div class="srch-input">
-            <form>
+          <form>
+            <div class="srch-input">
               <input
                 type="text"
                 placeholder="Marseille, France"
                 class="input"
               />
-            </form>
-          </div>
-          <div class="srch-btn-container">
-            <button class="srch-btn">Search</button>
-            <button class="srch-btn-icon">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </div>
+            </div>
+            <div class="srch-btn-container">
+              <button class="srch-btn">Search</button>
+              <button class="srch-btn-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </form>
         </div>
         <!--filters and filter info-->
         <div class="filters">
-          <p class="filters-txt">Filters</p>
+          <h2 class="filters-txt">Filters</h2>
           <div class="filter-btns">
             <button class="buget-btn">
               <i class="fa-solid fa-money-bill-wave"></i>Budget
