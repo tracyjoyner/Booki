@@ -14,23 +14,23 @@
   color: var(--main-color);
 }
 
-#grey {
+.grey {
   color: var(--main-bg-color);
 }
 
 /****** logo and nav ***********/
 body {
-    max-width: 1440px;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-  }
-  
-  .main-container {
-    width: 100%;
-    padding: 0 50px;
-    box-sizing: border-box;
-  }
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.main-container {
+  width: 100%;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
 
 .logo {
   float: inline-start;
@@ -242,9 +242,9 @@ form {
 
 /****** Accommodation And Popular ***********/
 a {
-    color: inherit;
-    text-decoration: none;
-  }
+  color: inherit;
+  text-decoration: none;
+}
 
 .accommodation-and-popular {
   display: flex;
@@ -536,6 +536,8 @@ li a {
     flex: 1;
     display: flex;
     justify-content: center;
+    padding-bottom: 12px;
+    padding-top: 10px;
   }
 
   .nav:hover,
