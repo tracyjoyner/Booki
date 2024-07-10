@@ -72,7 +72,7 @@ nav {
   margin-top: 30px;
   display: flex;
   height: 45px;
-  width: 335px;
+  max-width: 335px;
   border-radius: 10px;
 }
 
@@ -385,7 +385,9 @@ a {
 
 .activities-cards {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 25px;
   padding: 0px;
   margin-top: 33px;
 }
@@ -491,10 +493,6 @@ li a {
   .popular .card {
     width: 235px;
     margin-top: 33px;
-  }
-
-  .popular-cards a {
-    width: 30%;
   }
 
   .activities-cards article {
@@ -641,6 +639,10 @@ li a {
     align-items: center;
   }
 
+  .activities-cards .card {
+    width: 100%;
+  }
+
   .activities-cards article {
     height: 200px;
     margin-bottom: 15px;
@@ -652,7 +654,6 @@ li a {
 
   .footer {
     margin-top: 33px;
-    width: 100vw;
   }
 
   .footer-group {
