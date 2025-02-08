@@ -1,9 +1,7 @@
-# booki
+# Booki
 
 # Scenario
 You’re starting your internship as a web developer at a startup called Booki.
-
-Booki logo
 
 The company wants to create a website where users can find accommodation and activities in their chosen city.
 
