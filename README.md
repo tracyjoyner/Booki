@@ -1,4 +1,4 @@
-# Booki
+# Responsive Website using HTML & CSS - Booki
 
 # Scenario
 You’re starting your internship as a web developer at a startup called Booki.
